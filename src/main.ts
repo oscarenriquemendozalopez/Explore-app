@@ -27,11 +27,8 @@ const countriesContainer: HTMLElement | null =
     "#region-filter",
   );
 
-  const homeView: HTMLElement | null = 
-  document.querySelector("#home-view");
-
-  const detailView: HTMLElement | null = 
-  document.querySelector("#detail-view");
+ const homeView = document.querySelector<HTMLElement>("#home-view");
+ const detailView = document.querySelector<HTMLElement>("#detail-view");
 
 let allCountries: Country[] = [];
 
